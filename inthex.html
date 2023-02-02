@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mi primer Cv</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+    <!--menu encabezado-->
+
+    <div class="content-header">
+        <header>
+            <div class="logo">
+                <a href="#">Yesi</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre Mi</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--Seccion Inicio-->
+    <section id="inicio" class="inicio">
+        <div class="content-banner">
+            <div class="content-img">
+                <img src="imagenes/yoavatar.jpg" alt="">
+            </div>
+            <h1>Yesica Soledad Cardozo</h1>
+            <h2>Desarrolladora Web en progreso</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+            </div>
+        </div>
+    </section>
+    <!--Seccion Sobre Mi-->
+    <section id="sobremi" class="sobremi">
+        <div class="content-seccion">
+            <h2>Sobre Mi</h2>
+            <p>Hola soy Yesica.
+            Tengo 31 años, vivo en Berazategui,Buenos Aires,Argentina.Tengo un Hijo,llamado Valentino.Actualmente estoy cursando para Desarrolladora Web via Online.
+        En mis ratos libres me gusta mirar series o peliculas,tambien juego online juegos en equipo.
+    Trabaje durante muchos años en el area de comercio , atencion al publico . Mi ultimo empleo fue como Administrativa en un call-center de P.M.O.
+En esta etapa opte por obtener conocimiento sobre Desarrollo Web y asi poder trabajar por mi cuenta.</p>
+
+            <!--DATOS PERSONALES-->
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de nacimiento:</strong>
+                            03-11-1991
+                        </li>
+
+                        <li>
+                            <strong>Telefono</strong>
+                            011-15-69038413
+                        </li>
+                        <li>
+                            <strong>E-mail</strong>
+                            yesicascardozo@gmail.com
+                        </li>
+
+                        <li> <strong>Ubicacion</strong>
+                            Berazategui,Buenos Aires,Argentina
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--INTERESES-->
+            <div class="col">
+                <h3>Intereses</h3>
+                <div class="content-intereses">
+                    <div class="interes">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>Video Juegos</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-plane"></i>
+                        <span>Viajes</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-music"></i>
+                        <span>Musica</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion Curriculum-->
+    <section id="curriculum" class="curriculum">
+        <div class="content-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Cursando Desarrollo Web</h4>
+                        <span class="casa">Academy Online</span>
+                        <span class="fecha">2022-2023</span>
+                        <p> Curso Front-end </p>
+                        <div class="contectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Objetivo</h3>
+                    <div class="item der">
+                        <h4>Desempeñarme en las tareas asignadas</h4>
+                        <span class="casa">Cursos</span>
+                        <span class="fecha">2022-2023</span>
+                        <p> Diseño de paginas web</p>
+                        <div class="contectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </section>
+
+
+    <!--Seccion Contacto-->
+    <section id="contacto" class="contacto">
+        <div class="content-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!--Formulario-->
+                <div class="col">
+                    <input type="text" placeholder="Tu Nombre">
+                    <input type="text" placeholder="Numero de Telefono">
+                    <input type="text" placeholder="Correo Electronico">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--Mapa-->
+                <div class="col">
+                    <img src="imagenes p1/berazategui.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                Berazategui,Buenos Aires ,Argentina
+                            </li>
+                            <li>
+                                <i class="fa-sharp fa-solid fa-mobile-screen-button"></i>
+                                Llamar: 01169038413
+                            </li>
+                            <li>
+                                <i class="fa-sharp fa-solid fa-at"></i>
+                                Mail: yesicascardozo@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-sharp fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
